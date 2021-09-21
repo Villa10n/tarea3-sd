@@ -1,68 +1,317 @@
 {
     "products":[
 
-        {"name":"rtx3070",
-        "precio" : 1000000        
+        {"name":"rtx2060",
+        "precio" : 600000,
+        "stock" : 20        
         },
-        {"name":"rtx3080",
-        "precio" : 1500000        
+        {"name":"rtx2070",
+                "precio" : 650000,
+                "stock" : 15       
         },
-        {"name":"rtx3090",
-        "precio" : 2000000        
-        },
-        {"name":"rtx3060",
-        "precio" : 7500000        
-        },
-        {"name":"rtx3070ti",
-        "precio" : 1100000        
-        },
-        {"name":"rtx3080ti",
-        "precio" : 1600000        
+        {"name":"rtx2080",
+                "precio" : 1000000,
+                "stock" : 10        
         },
         {"name":"rtx2080ti",
-        "precio" : 1000000        
+                "precio" : 1500000,
+                "stock" : 5        
         },
-        {"name":"radeon6700XT",
-        "precio": 800000
+        {"name":"rtx3060",
+                "precio" : 700000,
+                "stock" : 18        
+        },
+        {"name":"rtx3060ti",
+                "precio" : 800000,
+                "stock" : 16        
+        },
+        {"name":"rtx3070",
+                "precio" : 1000000,
+                "stock" : 12        
+        },
+        {"name":"rtx3070ti",
+                "precio" : 1150000,
+                "stock" : 14        
+        },
+        {"name":"rtx3080",
+                "precio" : 1450000,
+                "stock" : 4        
+        },
+        {"name":"rtx3080ti",
+                "precio" : 1500000,
+                "stock" : 8        
+        },
+        {"name":"rtx3090",
+                "precio" : 2000000,
+                "stock" : 9        
+        },
+        {"name":"radeon6700xt",
+                "precio" : 750000,
+                "stock" : 20        
         },
         {"name":"radeon6800",
-        "precio" : 1000000        
+                "precio" : 1000000,
+                "stock" : 16        
         },
-        {"name":"radeon6800XT",
-        "precio": 1300000
+        {"name":"radeon6800xt",
+                "precio" : 1300000,
+                "stock" : 11        
         },
         {"name":"radeon6900",
-        "precio":1750000
+                "precio" : 1600000,
+                "stock" : 12        
         },
-        {"name":"radeon6900XT",
-        "precio":2150000
+        {"name":"radeon6900xt",
+                "precio" : 1800000,
+                "stock" : 19        
         },
-        {"name":"Ryzen5950X",
-        "precio":780000
+        {"name":"inteli3-9100f",
+                "precio" : 120000,
+                "stock" : 30        
         },
-        {"name":"Intel11900K",
-        "precio":750000
+        {"name":"inteli5-9400f",
+                "precio" : 200000,
+                "stock" : 25        
         },
-        {"name":"RAMTridentZRoyal",
-        "precio":125000
+        {"name":"inteli9-9900k",
+                "precio" : 480000,
+                "stock" : 22        
         },
-        {"name":"SeaSonic1300W",
-        "precio":380000
+        {"name":"inteli5-10400f",
+                "precio" : 220000,
+                "stock" : 18        
         },
-        {"name":"LianLiPC-O11DXLROG",
-        "precio":280000
+        {"name":"inteli7-10600f",
+                "precio" : 350000,
+                "stock" : 23        
         },
-        {"name":"WDSN850",
-        "precio":200000
+        {"name":"inteli5-11400f",
+                "precio" : 245000,
+                "stock" : 27        
+        },       
+        {"name":"inteli9-11900k",
+                "precio" : 650000,
+                "stock" : 13        
         },
-	{"name":"Kit360EKWB",
-        "precio":350000
+        {"name":"ryzen5-3600x",
+                "precio" : 280000,
+                "stock" : 21        
         },
-	{"name":"MBX570SAORUSEXTREME",
-        "precio":780000
+        {"name":"ryzen7-3800x",
+                "precio" : 390000,
+                "stock" : 24        
         },
-	{"name":"TPLINKA3000WIFI6",
-        "precio":55000
-        }       
+        {"name":"ryzen9-3900x",
+                "precio" : 520000,
+                "stock" : 14        
+        },
+        {"name":"ryzen9-3950x",
+                "precio" : 700000,
+                "stock" : 6        
+        },
+        {"name":"threadripper3960x",
+                "precio" : 1100000,
+                "stock" : 4       
+        },
+        {"name":"threadripper3970x",
+                "precio" : 2000000,
+                "stock" : 3        
+        },
+        {"name":"threadripper3990x",
+                "precio" : 4000000,
+                "stock" : 2        
+        },
+        {"name":"ryzen5-5600x",
+                "precio" : 330000,
+                "stock" : 30        
+        },
+        {"name":"ryzen7-5800x",
+                "precio" : 590000,
+                "stock" : 19        
+        },
+        {"name":"ryzen9-5900x",
+                "precio" : 650000,
+                "stock" : 15        
+        },
+        {"name":"ryzen9-5950x",
+                "precio" : 780000,
+                "stock" : 16        
+        },
+        {"name":"hyperx3200-8gb",
+                "precio" : 50000,
+                "stock" : 42        
+        },
+        {"name":"hyperx3200-16gb",
+                "precio" : 95000,
+                "stock" : 31        
+        },
+        {"name":"hyperx3600-8gb",
+                "precio" : 65000,
+                "stock" : 30        
+        },
+        {"name":"hyperx3600-16gb",
+                "precio" : 120000,
+                "stock" : 33        
+        },
+        {"name":"gskill3200-8gb",
+                "precio" : 70000,
+                "stock" : 29        
+        },
+        {"name":"gskill3200-16gb",
+                "precio" : 135000,
+                "stock" : 32        
+        },
+        {"name":"gskill3600-8gb",
+                "precio" : 90000,
+                "stock" : 27        
+        },
+        {"name":"gskill3600-16gb",
+                "precio" : 175000,
+                "stock" : 21        
+        },
+        {"name":"crucial500gb",
+                "precio" : 85000,
+                "stock" : 36        
+        },
+        {"name":"crucial1tb",
+                "precio" : 180000,
+                "stock" : 17        
+        },
+        {"name":"sn750-500gb",
+                "precio" : 85000,
+                "stock" : 26        
+        },
+        {"name":"sn750-1tb",
+                "precio" : 170000,
+                "stock" : 30        
+        },
+        {"name":"sn850-500gb",
+                "precio" : 100000,
+                "stock" : 19        
+        },
+        {"name":"sn850-1tb",
+                "precio" : 230000,
+                "stock" : 15        
+        },
+        {"name":"p750gm",
+                "precio" : 85000,
+                "stock" : 20        
+        },
+        {"name":"p850gm",
+                "precio" : 120000,
+                "stock" : 30        
+        },
+        {"name":"p1000gm",
+                "precio" : 180000,
+                "stock" : 28        
+        },
+        {"name":"px1000w",
+                "precio" : 210000,
+                "stock" : 12        
+        },
+        {"name":"px1300w",
+                "precio" : 280000,
+                "stock" : 13        
+        },
+        {"name":"aio120",
+                "precio" : 55000,
+                "stock" : 37        
+        },
+        {"name":"aio240",
+                "precio" : 95000,
+                "stock" : 33        
+        },
+        {"name":"aio360",
+                "precio" : 150000,
+                "stock" : 10        
+        },
+        {"name":"ek120kit",
+                "precio" : 150000,
+                "stock" : 10        
+        },
+        {"name":"ek240kit",
+                "precio" : 200000,
+                "stock" : 12        
+        },
+        {"name":"ek360kit",
+                "precio" : 340000,
+                "stock" : 9        
+        },
+        {"name":"lianli011mini",
+                "precio" : 130000,
+                "stock" : 22        
+        },
+        {"name":"lianli011xl",
+                "precio" : 160000,
+                "stock" : 18        
+        },
+        {"name":"lianli011dxl",
+                "precio" : 180000,
+                "stock" : 21        
+        },
+        {"name":"lianli011dxlrog",
+                "precio" : 215000,
+                "stock" : 17        
+        },
+        {"name":"aerocool-airflow",
+                "precio" : 140000,
+                "stock" : 32        
+        },
+        {"name":"coolermastermasterbox",
+                "precio" : 170000,
+                "stock" : 13        
+        },
+        {"name":"alseyeaswarrior",
+                "precio" : 170000,
+                "stock" : 24        
+        },
+        {"name":"thermaltakecorep5",
+                "precio" : 176000,
+                "stock" : 15        
+        },
+        {"name":"nzxth510elite",
+                "precio" : 200000,
+                "stock" : 16        
+        },
+        {"name":"cougarblazer",
+                "precio" : 235000,
+                "stock" : 6        
+        },
+        {"name":"azzacube",
+                "precio" : 250000,
+                "stock" : 3        
+        },
+        {"name":"cougargeminix",
+                "precio" : 600000,
+                "stock" : 1        
+        },
+        {"name":"gigabyteb550m",
+                "precio" : 300000,
+                "stock" : 17        
+        },
+        {"name":"asrockb550taichi",
+                "precio" : 305000,
+                "stock" : 12        
+        },
+        {"name":"aorusx570prowifi",
+                "precio" : 310000,
+                "stock" : 19        
+        },
+        {"name":"msimpgx570gamingpro",
+                "precio" : 360000,
+                "stock" : 21        
+        },
+        {"name":"rogcrosshairviii",
+                "precio" : 390000,
+                "stock" : 14        
+        },
+        {"name":"aorusx570master",
+                "precio" : 380000,
+                "stock" : 6        
+        },
+        {"name":"aorusz490extreme",
+                "precio" : 770000,
+                "stock" : 2        
+        }
     ]
 }
