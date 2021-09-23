@@ -39,11 +39,11 @@ Ahora debemos setear algunos valores, para esto, dentro del servicio de redis, d
                       config get maxmemory
                       config set maxmemory 1M
                       config set maxmemory-policy volatile-lru
-el primero comando es para ver la configuracion de la memoria maxima que puede utilizar reddis; el segundo comando setea la memoria maxima en 1mb, y finalmente el ultimo comando configura el uso de memoria con el algoritmo de lru, el cual consiste en que en el caso de que se llena la memoria de 1mb, se eliminara el dato mas antiguo en memoria siempre y cuando este libere el espacio necesario para insertar el nuevo dato.
+El primer comando sirve para ver la configuracion de la memoria máxima que puede utilizar redis; el segundo comando setea la memoria maxima en 1mb, y finalmente el último comando configura el uso de memoria con el algoritmo de lru, el cual consiste en que en el caso de que se llene la memoria de 1mb, se eliminara el dato más antiguo en memoria siempre y cuando este libere el espacio necesario para insertar el nuevo dato.
 
 Teniendo todas estas configuraciones, el servicio completo está listo para usarse ;D
 
-Cabe recalcar que en nuestra tarea, la ruta de buscador si hace la verificacion de si el busqueda ya se encuentra en la cache, pero si no la encuentra, este accede directamente al archivo json donde se encuentra el inventario, esto debido a que no logramos implementar la comunicacion con mediante el metodo grpc con el servidor.
+Cabe recalcar que en nuestra tarea, la ruta de buscador si hace la verificación de si el búsqueda ya se encuentra en la cache, pero si no la encuentra, este accede directamente al archivo json donde se encuentra el inventario, esto debido a que no logramos implementar la comunicacion con mediante el metodo grpc con el servidor.
                     
           
           
