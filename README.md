@@ -1,3 +1,6 @@
+Integrantes: Jose Arteaga, Diego Saavedra, Joaquin  Villalon
+
+
 Este proyecto fue realizado utilizando el SO Ubuntu 20.04, una distrubución de Linnux basado en Debian.
 
 Para poder iniciar el servidor, debe instalar los siguientes paquetes: Node.js - Express - Nodemon - npm
