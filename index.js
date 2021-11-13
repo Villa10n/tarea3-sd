@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Rutas
 app.use('/tarea2', require('./routes/rutas'));
-
+app.use('/kafkajs', require('./routes/kafkajs'));
 
 // Peticiones
 app.listen(process.env.PORT, () => {
