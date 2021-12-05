@@ -1,11 +1,12 @@
 const { Router } = require('express');
 const router = Router();
 
-router.get('/addProduct', async (req, res) => {
+router.get('/GetProduct', async (req, res) => {
     try {
+        console.log(process.pid);
         return res.status(200).json({
             ok: true,
-            msg: 'addProduct'
+            msg: 'GetProduct'
         });
     } catch (error) {
         console.log(error);
@@ -16,11 +17,12 @@ router.get('/addProduct', async (req, res) => {
     }
 });
 
-router.get('/GetProduct', async (req, res) => {
+router.post('/addProduct', async (req, res) => {
     try {
+        console.log(process.pid);
         return res.status(200).json({
             ok: true,
-            msg: process.pid
+            msg: 'addProduct'
         });
     } catch (error) {
         console.log(error);

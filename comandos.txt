@@ -1,0 +1,15 @@
+Para correr un servidor con un puerto en especifico, usar: PORT=3000 node index.js
+
+// Comandos de yerko para crear los docker postgres
+// Master
+docker run -dti -p 55432:5432 --name postgresql-master \
+  -e POSTGRESQL_REPLICATION_MODE=master \
+  -e POSTGRESQL_USERNAME=user1 \
+  -e POSTGRESQL_PASSWORD=password1 \
+  -e POSTGRESQL_DATABASE=my_database \
+  -e POSTGRESQL_REPLICATION_USER=user2 \
+  -e POSTGRESQL_REPLICATION_PASSWORD=password2 \
+  bitnami/postgresql:latest
+
+// Slave
+docker run -dti -p 65432:5432 --name postgresql-slave --link postgresql-master:master -e POSTGRESQL_REPLICATION_MODE=slave -e POSTGRESQL_USERNAME=user1 -e POSTGRESQL_PASSWORD=password1 -e POSTGRESQL_MASTER_HOST=master -e POSTGRESQL_MASTER_PORT_NUMBER=5432 -e POSTGRESQL_REPLICATION_USER=user2 -e POSTGRESQL_REPLICATION_PASSWORD=password2 bitnami/postgresql:latest
