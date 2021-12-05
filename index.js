@@ -1,5 +1,4 @@
 const express = require('express');
-require('dotenv').config();
 var bodyParser = require('body-parser');
 
 // Crear el server
@@ -13,8 +12,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Rutas
-app.use('/tarea2', require('./routes/rutas'));
-app.use('/kafkajs', require('./routes/kafkajs'));
+app.use('/tarea3', require('./routes/rutas'));
 
 // Peticiones
 app.listen(process.env.PORT, () => {

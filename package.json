@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "set HOST=localhost1 && set PORT=3000 && node index.js",
+    "test2": "set HOST=localhost2 && set PORT=3001 && node index.js"
   },
   "keywords": [],
   "author": "",

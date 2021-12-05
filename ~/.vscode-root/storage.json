@@ -1501,7 +1501,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 256,
+            "sideBarWidth": 300,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1513,7 +1513,7 @@
             "uiState": {
                 "mode": 0,
                 "x": 448,
-                "y": 146,
+                "y": 183,
                 "width": 1024,
                 "height": 768
             }

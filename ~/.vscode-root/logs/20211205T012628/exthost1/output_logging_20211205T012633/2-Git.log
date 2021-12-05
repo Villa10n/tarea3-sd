@@ -1,0 +1,443 @@
+Validating found git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/redes/Escritorio/tarea2-sd/tarea1-sd
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git config --get commit.template
+> git show --textconv :routes/rutas.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/routes/rutas.js
+> git cat-file -s dc0d0d23b9676af18341af4eb6ffd4fa8c9b517d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :routes/rutas.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/routes/rutas.js
+> git cat-file -s dc0d0d23b9676af18341af4eb6ffd4fa8c9b517d
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :routes/rutas.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/routes/rutas.js
+> git cat-file -s dc0d0d23b9676af18341af4eb6ffd4fa8c9b517d
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :routes/rutas.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/routes/rutas.js
+> git cat-file -s dc0d0d23b9676af18341af4eb6ffd4fa8c9b517d
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :package-lock.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package-lock.json
+> git cat-file -s ace9537d785e04c6314e641c104bcb0dc0d1741b
+> git show --textconv :jsonexam.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/jsonexam.json
+> git cat-file -s 6735de596bfbc781692782f3c043de3eaa9f704f
+> git show --textconv :package-lock.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package-lock.json
+> git cat-file -s ace9537d785e04c6314e641c104bcb0dc0d1741b
+> git show --textconv :jsonexam.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/jsonexam.json
+> git cat-file -s 6735de596bfbc781692782f3c043de3eaa9f704f
+> git show --textconv :package-lock.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package-lock.json
+> git cat-file -s ace9537d785e04c6314e641c104bcb0dc0d1741b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git show --textconv :package.json
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/package.json
+> git cat-file -s cbd2ad3e5f74afbe52027731dc69e6b905a22559
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :config.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/config.js
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :routes/rutas.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/routes/rutas.js
+> git cat-file -s dc0d0d23b9676af18341af4eb6ffd4fa8c9b517d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :routes/rutas.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/routes/rutas.js
+> git cat-file -s dc0d0d23b9676af18341af4eb6ffd4fa8c9b517d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :.env
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/.env
+> git cat-file -s c0c68b1ca0498b5602a5d359f295413619e89771
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :README.md
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/README.md
+> git cat-file -s 50bb4120ed64bb5c61531c7b90c5f95907e65c7b
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git check-ignore -v -z --stdin
+> git show --textconv :public/index.html
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/public/index.html
+> git cat-file -s 75e93d878aacaa17d005e2b952e6ad8812dd2904
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
+> git show --textconv :public/styles.css
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/public/styles.css
+> git cat-file -s e7cc048a2e9d8773fb930e8bceb66addfa53d9e9
+> git show --textconv :index.js
+> git ls-files --stage -- /home/redes/Escritorio/tarea2-sd/tarea1-sd/index.js
+> git cat-file -s 596aab477bb9a4d3ce66837969afd699be351857
