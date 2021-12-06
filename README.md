@@ -18,8 +18,10 @@ Este comando descargara automáticamente todas las dependencias que requiere el 
 
 Una vez completados estos pasos, su servidor estará listo para arrancar con el comando que veremos más adelante.
 Ahora debemos instalar el balanceador de carga, para este caso haremos uso de NGINX, cuya instalación se realiza mediante el siguiente comando:
-                      sudp apt update
+```
+                      sudo apt update
                       sudo apt install nginx
+````
                       
 Ya tenemos instalado NGINX, ahora debemos configurarlo, para esto debemos introducir por consola las siguientes lineas de comando:
             
