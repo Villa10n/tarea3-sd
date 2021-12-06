@@ -114,7 +114,7 @@ y se envía un post con el siguiente contenido:
     "precio":999
 } 
 ```
-, donde localhost esta siendo afectado por NGINX y dirige a una  de las 3 instancias, y add/Porduct es una de las rutas que específicamente utiliza la conexión con el contenedor master de psql. luego, para obtener el listado de productos hacemos una petición del tipo get a la sieguiente url:
+, donde localhost esta siendo afectado por NGINX y dirige a una  de las 3 instancias, y add/Porduct es una de las rutas que específicamente utiliza la conexión con el contenedor master de psql. luego, para obtener el listado de productos hacemos una petición del tipo get a la siguiente url:
 
 		localhost/GetProduct
 		
