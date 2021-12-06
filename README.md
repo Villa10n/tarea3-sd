@@ -14,37 +14,78 @@ Para poder iniciar el servidor, debe instalar los siguientes paquetes: Node.js -
 Luego en la carpeta que haya clonado este repositorio, debe ejecutar el siguiente comando:
                       npm install
                       
-Este comando descargara automanticamente todas las dependencias que requiere el proyecto, en este caso son express y nodemon.
+Este comando descargara automáticamente todas las dependencias que requiere el proyecto, en este caso son express y nodemon.
 
-Una vez completados estos pasos, su servidor estará listo para arrancar con el comando:  npm run dev
-
-Ahora, para la instalación de redis, debe ejecutar los siguientes comandos y esperar a que cada uno de ellos finalice:
-
+Una vez completados estos pasos, su servidor estará listo para arrancar con el comando que veremos más adelante.
+Ahora debemos instalar el balanceador de carga, para este caso haremos uso de NGINX, cuya instalación se realiza mediante el siguiente comando:
                       sudp apt update
-                      sudo apt install -y redis
-                      sudo apt install redis-tools
+                      sudo apt install nginx
                       
-Ya tenemos intalado redis, ahora vamos a comprobar si fue correcta su instalación y si está operando, para esto debemos ejecutar los
-siguientes comandos y esperar a que cada uno de ellos finalice:
+Ya tenemos instalado NGINX, ahora debemos configurarlo, para esto debemos introducir por consola las siguientes lineas de comando:
             
-                      redis-cli
+                      sudo touch /etc/nginx/conf.d/load-balancer.conf
+                      sudo rm -r /etc/nginx/sites-enabled/default
+                      sudo systemctl restart nginx
+                      sudo nano /etc/nginx/conf.d/load-balancer.conf
           
-          Al ejecutar este comando tendremos corriendo nuestro servidor de redis, se mostrará nuestra dirección de localhost junto con
-          un puerto por defecto, el cual suele tener este aspecto: 127.0.0.1:6379>
-          para verificar que todo está en orden, debemos escribir el comando "ping", sin comillas y todo en minúsculas, a lo que se nos
-          contestará con un "PONG", lo que indica que tenemos conexión.
-          
-Ahora debemos setear algunos valores, para esto, dentro del servicio de redis, debemos introducir los siguientes comandos:
+Una vez llegado a este punto, podemos apreciar que el editor de texto __nano__ se habrá desplegado, dentro de este debemos fijar el siguiente archivo de configuración;
+                        
+                      upstream backend{
+                        server localhost:3000;
+                        server localhost:3001;
+                        server localhost:3002;
+                        }
+                      server{
+                        listen 80;
+                        location / {
+                                proxy_pass http://backend;
+                                }
+                        }
+                     
+                      
+Para guardar estos cambios, debemos oprimir CTRL+X, luego la letra __S__ y finalmente aceptar y abremos salido del editor de texto. Realizado esto, añadomos el siguiente comando por consola:
+```
+                       sudo systemctl restart nginx
+```
 
-                      config get maxmemory
-                      config set maxmemory 1M
-                      config set maxmemory-policy volatile-lru
-El primer comando sirve para ver la configuracion de la memoria máxima que puede utilizar redis; el segundo comando setea la memoria maxima en 1mb, y finalmente el último comando configura el uso de memoria con el algoritmo de lru, el cual consiste en que en el caso de que se llene la memoria de 1mb, se eliminara el dato más antiguo en memoria siempre y cuando este libere el espacio necesario para insertar el nuevo dato.
+Con esto tendremos operativo nuestro balanceador de carga.
+Ahora debe ejecutar los 3 servidores, para esto una vez clonado este repositorio, debe arrancar los servidores indicando los puertos donde serán ejecutados, para esto debe abrir 3 terminales distintas dentro de la carpeta, y ejecutar los siguientes comandos, cada uno en una terminal distinta.
+``` 
+                      PORT=3000 node index.js
+		      PORT=3001 node index.js
+		      PORT=3002 node index.js
+```
 
-Teniendo todas estas configuraciones, el servicio completo está listo para usarse ;D
+Una vez usados cada uno de los comandos anteriores en una terminal distinta, tendremos nuestros servidores en marcha.
+Para configurar la base de datos mediante la arquitectura Master-Slave, debemos primero instalar Docker, con fines de simplificación de uso.
+Para ello debe dirigirse al siguiente sitio web: https://hub.docker.com/editions/community/docker-ce-desktop-windows , donde encontrará el instalador correspondiente a Windows10, luego debe seguir los pasos que se indican para que su Docker quede instalado correctamente.
 
-Cabe recalcar que en nuestra tarea, la ruta de buscador si hace la verificación de si el búsqueda ya se encuentra en la cache, pero si no la encuentra, este accede directamente al archivo json donde se encuentra el inventario, esto debido a que no logramos implementar la comunicacion con mediante el metodo grpc con el servidor.
-                    
+Para la configuración de la base de datos MASTER, debemos ingresar esta serie de comandos en nuestro Docker.
+
+```
+		     docker run -dti -p 55432:5432 --name postgresql-master \
+  		     -e POSTGRESQL_REPLICATION_MODE=master \
+ 		     -e POSTGRESQL_USERNAME=user1 \
+ 		     -e POSTGRESQL_PASSWORD=password1 \
+ 		     -e POSTGRESQL_DATABASE=my_database \
+ 		     -e POSTGRESQL_REPLICATION_USER=user2 \
+ 		     -e POSTGRESQL_REPLICATION_PASSWORD=password2 \
+ 		     bitnami/postgresql:latest     
+```
           
-          
-          
+En lo que respecta a la base de datos SLAVE, la cual actuará como nuestra réplica, debemos usar los siguientes comandos dentro de nuestro Docker.
+
+```
+                     docker run -dti -p 65432:5432
+                     --name postgresql-slave --link postgresql-master:master
+                     -e POSTGRESQL_REPLICATION_MODE=slave
+                     -e POSTGRESQL_USERNAME=user1
+                     -e POSTGRESQL_PASSWORD=password1
+                     -e POSTGRESQL_MASTER_HOST=master
+                     -e POSTGRESQL_MASTER_PORT_NUMBER=5432
+                     -e POSTGRESQL_REPLICATION_USER=user2
+                     -e POSTGRESQL_REPLICATION_PASSWORD=password2
+                     bitnami/postgresql:latest
+
+```
+Una vez terminados estos pasos, todo está listo para su configuración.
