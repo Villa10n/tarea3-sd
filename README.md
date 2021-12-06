@@ -90,4 +90,4 @@ En lo que respecta a la base de datos SLAVE, la cual actuará como nuestra répl
                      bitnami/postgresql:latest
 
 ```
-Una vez terminados estos pasos, todo está listo para su configuración.
+Una vez terminados estos pasos, todo está listo para la configuración de la tabla de inventario, para esto usaremos el software DataGrip (disponible en los softwares de ubuntu), mediante el cual crearemos una tabla y así podremos definir usuarios y privilegios sobre las bases de datos creadas.
