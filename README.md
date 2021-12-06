@@ -90,4 +90,33 @@ En lo que respecta a la base de datos SLAVE, la cual actuará como nuestra répl
                      bitnami/postgresql:latest
 
 ```
-Una vez terminados estos pasos, todo está listo para la configuración de la tabla de inventario, para esto usaremos el software DataGrip (disponible en los softwares de ubuntu), mediante el cual crearemos una tabla y así podremos definir usuarios y privilegios sobre las bases de datos creadas.
+Para la creación de tablas en las bases de datos creadas en docker, se utilizó una herrmaienta llamada Datagrip (disponible en los softwares de ubuntu), la cual es un gestor de bases de datos. Primero se creó una conexión del tipo postgres, en la cual se establecieron los parámetros de conexión del contendor del docker __master__, que son el puerto 55432 y el user1 y password1, y luego se creo otra conexión del mismo, tipo __slave__ que con los parámetros del docker slave, que son puerto 65432 y user1 y password1. 
+Luego de la creación de las conexiones a las distintas replicas de la base de datos, se crea la table en la consola de la conexión __master__, con el siguiente comando.
+
+```
+create table table_name
+(
+    id     serial
+        constraint table_name_pk
+            primary key,
+    nombre varchar(255),
+    precio int
+);
+```
+Creando la tabla en el master, los cambios efectuados se replicarán a las otras bases de datos esclavas.
+Con la creación de las tablas se finalizan los requerimientos para que el experimento funcione. Ahora queda usar la herramienta de __Postman__ para obtener e insertar los productos. Para ello primero se insertara un producto con la siguiente url:
+
+		__localhost/addProduct__
+y se envía un post con el siguiente contenido:
+```
+{
+    "nombre":"Bolsita de Tabletones",
+    "precio":999
+} 
+```
+, donde localhost esta siendo afectado por NGINX y dirige a una  de las 3 instancias, y add/Porduct es una de las rutas que específicamente utiliza la conexión con el contenedor master de psql. luego, para obtener el listado de productos hacemos una petición del tipo get a la sieguiente url:
+
+		__localhost/GetProduct__
+		
+que al igual que la url anterior, es afectada por NGINX y redirige la consulta a una de las 3 instancias, esta ruta utliza solo la conxión al contenedor esclavo
+y se obtiene las filas de la tabla productos. Con esto todo el proceso queda terminado.
